@@ -4,10 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mini Competition</title>
-    <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <audio id="bg-music" loop>
+      <source
+        src="./media/Nino Rota - The Godfather theme.mp3"
+        type="audio/mpeg"
+      />
+      Your browser does not support the audio element.
+    </audio>
     <div class="sky stars">
       <span
         class="comet"
@@ -67,14 +74,23 @@
       ></span>
     </div>
     <div class="overlay">
-        <div class="box">
-            <h1 class="title">
-                Welcome to Chingiz Gaffarov's
-                <br>
-                Frontend competition
-            </h1>
-            <a target="_blank" href="https://www.figma.com/design/2sy8biADoNG0VqVB1DSSnw/Mini-Hackathon" class="link">Open Figma Template</a>
+      <div class="box">
+        <h1 class="title">
+          Welcome to Chingiz Gaffarov's
+          <br />
+          Frontend competition
+        </h1>
+        <div class="row">
+          <a
+            target="_blank"
+            href="https://www.figma.com/design/2sy8biADoNG0VqVB1DSSnw/Mini-Hackathon"
+            class="link"
+            >Open Figma Template</a
+          >
+          <button class="music-btn">Turn on sound</button>
         </div>
+      </div>
     </div>
+    <script src="main.js"></script>
   </body>
 </html>
